@@ -19,22 +19,3 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Thumbnail Image", name: "image", widget: "image"}
-      - {label: "Thumbnail Video", name: "thumbnailVideo", widget: "file"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - label: "Body section"
-        name: "sections"
-        widget: "list"
-        collapsed: false
-        fields:
-          - {label: "Sub title", name: "subtitle", widget: "string"}
-          - {label: "Copy", name: "copy", widget: "text"}
-      - label: "Gallery"
-        name: "carousel"
-        widget: "list"
-        fields:
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Video", name: "video", widget: "file"}
-          - {label: "Alt text", name: "alt", widget: "string"}
