@@ -15,7 +15,7 @@ public_folder: "img"
 collections:
   - name: "Post"
     label: "Post"
-    folder: "db/"
+    folder: "_db/test"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
