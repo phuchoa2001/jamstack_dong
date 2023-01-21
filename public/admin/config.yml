@@ -1,22 +1,40 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
-media_folder: public/img
-public_folder: img
+  name: github
+  repo: phuchoa2001/jamstack-basic
+  # optional, defaults to master
+  # branch: main
+
+local_backend: true
+
+display_url: https://vigorous-mahavira-319660.netlify.app/
+logo_url: https://vigorous-mahavira-319660.netlify.app/img/baked-logo.svg
+
+media_folder: "site/static/img"
+public_folder: "img"
+
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+  - name: "Post"
+    label: "Post"
+    folder: "site/content/work"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Thumbnail Image", name: "image", widget: "image"}
+      - {label: "Thumbnail Video", name: "thumbnailVideo", widget: "file"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - label: "Body section"
+        name: "sections"
+        widget: "list"
+        collapsed: false
+        fields:
+          - {label: "Sub title", name: "subtitle", widget: "string"}
+          - {label: "Copy", name: "copy", widget: "text"}
+      - label: "Gallery"
+        name: "carousel"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Video", name: "video", widget: "file"}
+          - {label: "Alt text", name: "alt", widget: "string"}
