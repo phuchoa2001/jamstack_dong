@@ -9,13 +9,13 @@ local_backend: true
 display_url: https://vigorous-mahavira-319660.netlify.app/
 logo_url: https://vigorous-mahavira-319660.netlify.app/img/baked-logo.svg
 
-media_folder: "db/img"
+media_folder: "db/"
 public_folder: "img"
 
 collections:
   - name: "Post"
     label: "Post"
-    folder: "db/work"
+    folder: "db/"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
