@@ -2,7 +2,7 @@ backend:
   name: github
   repo: phuchoa2001/jamstack-basic
   # optional, defaults to master
-  branch: main
+  # branch: main
 
 local_backend: true
 
