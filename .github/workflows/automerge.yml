@@ -10,7 +10,7 @@ env:
   # replace "github_username" with your GitHub username
   # replace "github.com/username/repo.git" with your GitHub repo path
   # do NOT replace ${{secrets.GITHUB_TOKEN}}, GitHub will take care of it
-  MY_REPO: https://github_username:phuchoa2001@github.com:phuchoa2001/jamstack-basic.git
+  MY_REPO: https://github_username:phuchoa2001@https://github.com/phuchoa2001/jamstack-basic
 
   # replace "long-lived_branch_name" with your branch name
   MY_BRANCH: main
